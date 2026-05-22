@@ -1,7 +1,9 @@
-"""Fattorizzazione LU di una matrice"""
+"""Fattorizzazione LU di una matrice
+    NON USA PERO' LA TECNICA DEL PIVOT
+"""
 
 import numpy as np
-from scipy import linalg
+
 
 A = np.array([[2,1,0,-1],
               [-2,-2,1,-1],
@@ -23,5 +25,15 @@ def fatt_LU(a:np.ndarray):
             L[j,i] = mul
             
             U[j, :] = U[j, :] - mul * U[i, :]
+
+    return L,U
+
+
+l,u = fatt_LU(A)
+
+print("Matrice L: \n")
+print(l)
+print("\nMatrice U:\n")
+print(u)
 
          
