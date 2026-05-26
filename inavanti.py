@@ -24,7 +24,3 @@ def sostituzione_avanti(L:numpy.matrix,b:list):
     return x
         
 
-x = sostituzione_avanti(L,b)
-
-for v in x:
-    print(v)

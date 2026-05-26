@@ -1,6 +1,4 @@
-"""Fattorizzazione LU di una matrice
-    NON USA PERO' LA TECNICA DEL PIVOT
-"""
+"""Fattorizzazione LU di una matrice"""
 
 import numpy as np
 
@@ -29,11 +27,5 @@ def fatt_LU(a:np.ndarray):
     return L,U
 
 
-l,u = fatt_LU(A)
-
-print("Matrice L: \n")
-print(l)
-print("\nMatrice U:\n")
-print(u)
 
          
