@@ -25,7 +25,7 @@ def newton(f,x0,tol,itmax,debug=False):
     if not arresto:
         print("Convergenza non raggiunta")
         
-    print("Alpha: " + str(x1))
+    print("Alpha: " + str(x1)) # Dove si trova lo 0
     print("Iterate: " + str(it))
 
 
