@@ -1,13 +1,16 @@
 """Algoritmo di eliminazione di Gauss con tecnica del massimo pivot parziale"""
 
 import numpy as np
+import indietro
+
 A = np.array([
-    [2, 1, -1],
-    [-3, -1, 2],
-    [-2, 1, 2]
+    [2, -1, 0, 1], 
+    [1, 2, -1, 1], 
+    [0, 1, 2, -1], 
+    [1, 0, 1, 2]
 ], dtype=float)
 
-b = np.array([8, -11, -3], dtype=float)
+b = np.array([2, 3, 2, 4], dtype=float)
 
 def gauss(a: np.ndarray, b: np.ndarray):
 
@@ -33,4 +36,8 @@ def gauss(a: np.ndarray, b: np.ndarray):
 
     return a, b
 
-a,b = gauss(A,b)
+# a,b = gauss(A,b)
+# 
+# sol = indietro.sostituzione_indietro(a,b)
+# 
+# print(sol)

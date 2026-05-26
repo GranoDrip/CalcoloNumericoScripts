@@ -24,9 +24,5 @@ def sostituzione_indietro(u:numpy.array,b:list):
 
     return x
 
-x = sostituzione_indietro(U,b)
-
-for v in x:
-    print(v)
 
 
