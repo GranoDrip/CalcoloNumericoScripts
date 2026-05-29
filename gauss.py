@@ -4,10 +4,9 @@ import numpy as np
 import indietro
 
 A = np.array([
-    [2, -1, 0, 1], 
-    [1, 2, -1, 1], 
-    [0, 1, 2, -1], 
-    [1, 0, 1, 2]
+    [1, -3, -1, 1], 
+    [3, -9, -1, -4], 
+    [2, 6, 4, 0]
 ], dtype=float)
 
 b = np.array([2, 3, 2, 4], dtype=float)
@@ -36,7 +35,9 @@ def gauss(a: np.ndarray, b: np.ndarray):
 
     return a, b
 
-# a,b = gauss(A,b)
+a,b = gauss(A,b)
+
+print(a)
 # 
 # sol = indietro.sostituzione_indietro(a,b)
 # 
