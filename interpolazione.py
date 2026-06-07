@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # ES 3 interpolazione
-def f(x):
+def f(x): # Funzione perfettamente elaborata
     return pow(np.e,-x) * np.sin(x*2)
 
 def g(x): # Funzione di runge
