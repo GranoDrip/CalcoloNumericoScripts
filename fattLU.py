@@ -3,10 +3,11 @@
 import numpy as np
 
 
-A = np.array([[2,1,0,-1],
-              [-2,-2,1,-1],
-              [4,2,-1,-1],
-              [0,2,-3,2]], dtype=float)
+A = np.array([[-1 , 1 ,-3 , 1 , 1 ],
+              [ 1 ,-2 , 0 , 0 , -1],
+              [ 0 ,-2 , 2 , 3 , -2 ],
+              [ 0 , 0 , 1 ,-2 , 0],
+              [ 0 , 0 , 0 , 2 , 0]], dtype=float)
 
 def fatt_LU(a:np.ndarray):
 
@@ -26,6 +27,11 @@ def fatt_LU(a:np.ndarray):
 
     return L,U
 
+l,u = fatt_LU(A)
+
+print(l)
+print("\n")
+print(u)
 
 
          
